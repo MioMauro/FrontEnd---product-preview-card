@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: hsl(30, 38%, 92%);
+    min-height: 100vh;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;  
+}
+
+.maincontainer{       
+    display: flex;
+    width: 33.75rem; 
+    border-radius: 10px; 
+    overflow: hidden;  
+}
+
+.image{    
+    flex:50%;
+}
+
+.image picture img{
+    width: 100%;
+    height: 100%;
+}
+
+.image picture .mobile{
+    width: 100%;
+    display: none;
+}
+
+.text{
+    background-color: hsl(0, 0%, 100%);
+    flex:50%;
+    padding: 1.4rem;
+}
+
+.perfume{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 1.5rem;
+}
+
+h1{
+    line-height: 1;
+    font-size: 1.8rem;
+    font-family: 'Fraunces', serif;
+    padding-bottom: 1.5rem;
+}
+
+.info{
+    font-family: 'Montserrat', sans-serif;
+    color: hsl(228, 12%, 48%);
+    padding-bottom: 1.5rem;
+    font-size: 13px;
+}
+
+.money{
+    font-family: 'Fraunces', serif;
+    font-size: 20px;
+    color: hsl(158, 36%, 37%);
+    padding-bottom: 1.5rem;
+}
+
+.money span{
+    color: hsl(228, 12%, 48%);
+    margin-bottom: 1rem;
+    margin-left: 20px;
+    font-family: 'Fraunces', serif;
+    font-size: 10px;
+}
+
+button{
+    background-color: hsl(158, 36%, 37%);
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 13px;    
+    cursor: pointer;
+    margin-bottom: 1.5rem;
+}
+
+.low{
+    font-size: 8px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Fraunces', serif;
+}
+
+@media screen and (max-width:544px){
+    body{
+        align-items: flex-start;          
+    }
+    
+    .maincontainer{        
+        padding: 1rem;    
+        display: flex;
+        flex-direction: column;
+        width: 100%;    
+    }
+
+    .image{
+        flex:100%;
+        
+    }
+
+    .text{
+        flex:50%;
+    }
+
+    .image picture img{
+        display: none;
+    }
+
+    .image picture .mobile{        
+        display: block;
+        border-radius: 10px 10px 0 0;        
+    }
+}
